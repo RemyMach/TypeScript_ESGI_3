@@ -1,0 +1,20 @@
+{
+  "name": "typescript_esgi_3",
+  "version": "1.0.0",
+  "description": "ESGI Angular Course",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemyMach/TypeScript_ESGI_3.git"
+  },
+  "author": "RemyMach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RemyMach/TypeScript_ESGI_3/issues"
+  },
+  "homepage": "https://github.com/RemyMach/TypeScript_ESGI_3#readme"
+}
