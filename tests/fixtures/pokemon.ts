@@ -4,7 +4,7 @@ export const carapuce = new Pokemon({
     name: "carapuce",
     health: 80,
     speed: 80,
-    attack: [
+    attacks: [
         {
             name: "charge",
             value: 10
@@ -28,7 +28,7 @@ export const pikachu = new Pokemon({
     name: "pikachu",
     health: 80,
     speed: 70,
-    attack: [
+    attacks: [
         {
             name: "charge",
             value: 10
@@ -52,7 +52,7 @@ export const papilusion = new Pokemon({
     name: "papilusion",
     health: 90,
     speed: 40,
-    attack: [
+    attacks: [
         {
             name: "vol",
             value: 10
@@ -76,7 +76,7 @@ export const other_pikachu = new Pokemon({
     name: "pikachu 2",
     health: 80,
     speed: 70,
-    attack: [
+    attacks: [
         {
             name: "charge",
             value: 10
