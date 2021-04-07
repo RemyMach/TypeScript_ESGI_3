@@ -1,4 +1,5 @@
 import {Pokemon} from '../../pokemon';
+
 export const carapuce = new Pokemon({
     name: "carapuce",
     health: 80,
