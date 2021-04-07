@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "compile": "tsc index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "test": "jest --runInBand --collectCoverage --watchAll"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/RemyMach/TypeScript_ESGI_3#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
     "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3"
   }
 }

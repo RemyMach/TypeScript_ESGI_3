@@ -1,13 +1,5 @@
 import {Pokemon} from './pokemon';
 
-/*export class Pokemon {
-    name: string;
+//let pok = new Pokemon({name: "jean"});
 
-    constructor(name: string) {
-        this.name = name;
-    }
-}*/
-
-let pok = new Pokemon("jean");
-
-console.log(pok);
+//console.log(pok);
