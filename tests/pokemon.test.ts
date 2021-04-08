@@ -1,6 +1,6 @@
-import {IAttack, Pokemon} from '../pokemon';
+import {IAttack, Pokemon} from '../model/pokemon';
 import {carapuce, pikachu, papilusion, other_pikachu} from './fixtures/pokemon';
-import {Turn} from './../turn';
+import {Turn} from '../game/turn';
 
 describe('Determine who are going to attack in first', () => {
 

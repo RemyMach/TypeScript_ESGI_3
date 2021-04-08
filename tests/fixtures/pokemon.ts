@@ -1,4 +1,4 @@
-import {Pokemon} from '../../pokemon';
+import {Pokemon} from '../../model/pokemon';
 
 export const carapuce = new Pokemon({
     name: "carapuce",

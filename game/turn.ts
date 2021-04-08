@@ -1,4 +1,5 @@
-import {Pokemon} from './pokemon';
+import {Pokemon} from '../model/pokemon';
+
 export class Turn {
 
     static determineWhoAttackInFirst(pok1: Pokemon, pok2: Pokemon, randomPokemon = Math.random): Pokemon {
