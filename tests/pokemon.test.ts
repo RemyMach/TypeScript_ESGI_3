@@ -2,6 +2,14 @@ import {IAttack, Pokemon} from '../model/pokemon';
 import {carapuce, pikachu, papilusion, other_pikachu} from './fixtures/pokemon';
 import {Turn} from '../game/turn';
 
+describe('Determine a toString() function for a pokemon', () => {
+
+    it('Should return a description for carapuce with name and attack', () => {
+        const description = "le name est pikachu il a 80 point de vie";
+        expect(pikachu.toString()).toBe(description);
+    });
+})
+
 describe('Determine who are going to attack in first', () => {
 
     describe('when the pokemons haven\'t got the same speed', () => {

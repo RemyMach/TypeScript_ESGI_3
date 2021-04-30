@@ -25,7 +25,8 @@ export class Pokemon implements IPokemon{
     }
 
     toString(): string {
-        return "le name est " + this.name;
+        return "le name est " + this.name
+            + " il a " + this.health + " point de vie";
     }
 
     determineTheAttack(randomAttack = Math.random): IAttack {
@@ -33,6 +34,8 @@ export class Pokemon implements IPokemon{
     }
 
     executeAnAttack(attack: IAttack, pokemon: Pokemon): void {
+        console.log("l'attaque " + attack.name + " avec des dégats de " + attack.value + " vers "
+            + pokemon.name);
         pokemon.health -= attack.value;
     }
 }

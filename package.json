@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
     "compile": "tsc",
     "test": "jest --runInBand --collectCoverage --watchAll"
   },

@@ -59,11 +59,11 @@ export const papilusion = new Pokemon({
         },
         {
             name: "poudre dodo",
-            value: 30
+            value: 20
         },
         {
             name: "cru-aile",
-            value: 35
+            value: 20
         },
         {
             name: "charge",
