@@ -7,6 +7,9 @@ export class Battle {
 
     static async startAFight(pokemon1: Pokemon, pokemon2: Pokemon): Promise<Pokemon> {
 
+        if(pokemon1.health <= 0 && pokemon2.health <= 0)
+            throw {name : "PokemonsNoLifeException", message : "Pokemon can't figth because they are dead"};
+
         while(pokemon1.health > 0 && pokemon2.health > 0) {
             await Battle.delay(1000);
             const pokemonWhoPlayInFirst = Turn.determineWhoAttackInFirst(pokemon1, pokemon2);

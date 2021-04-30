@@ -10,6 +10,7 @@ describe('Determine the Battle class comportment', () => {
         let pikachu: Pokemon;
 
         beforeEach(() => {
+            jest.setTimeout(30_000);
              papilusion = new Pokemon({
                 name: "papilusion",
                 health: 90,
@@ -60,18 +61,22 @@ describe('Determine the Battle class comportment', () => {
         });
 
         it('Should return pikachu beacause pipulsion is not stronger enough', async () => {
-            jest.setTimeout(30_000);
             expect(await Battle.startAFight(pikachu, papilusion)).toBe(pikachu);
         });
 
         it('Should return pikachu beacause papilusion is not stronger enough', async () => {
-            jest.setTimeout(30_000);
-
             expect(await Battle.startAFight(papilusion, pikachu)).toBe(pikachu);
         });
-    });
 
-    describe('Determine if the function delay work well', () => {
+        it('Should return papilusion when pikachu have 0 life', async () => {
+            pikachu.health = 0;
+            expect(await Battle.startAFight(papilusion, pikachu)).toBe(papilusion);
+        });
 
+        it('Should return error when papilusion and pikachu have both 0 life',  () => {
+            pikachu.health = 0;
+            papilusion.health = 0;
+            expect(async () => await Battle.startAFight(papilusion, pikachu)).rejects.toThrowError("PokemonsNoLifeException");
+        });
     });
 });

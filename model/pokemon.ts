@@ -34,8 +34,7 @@ export class Pokemon implements IPokemon{
     }
 
     executeAnAttack(attack: IAttack, pokemon: Pokemon): void {
-        console.log("l'attaque " + attack.name + " avec des dégats de " + attack.value + " vers "
-            + pokemon.name);
+
         pokemon.health -= attack.value;
     }
 }
