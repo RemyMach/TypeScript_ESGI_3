@@ -2,7 +2,7 @@
   "name": "typescript_esgi_3",
   "version": "1.0.0",
   "description": "ESGI Angular Course",
-  "main": "index.js",
+  "main": "dist/index.js",
   "private": true,
   "scripts": {
     "start": "node dist/index.js",

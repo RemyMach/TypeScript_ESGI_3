@@ -1,7 +1,6 @@
 import {Pokemon} from '../model/pokemon';
 import {Turn} from './turn';
 
-
 export class Battle {
 
 

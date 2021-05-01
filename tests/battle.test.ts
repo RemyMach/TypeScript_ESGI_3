@@ -1,5 +1,3 @@
-import {Turn} from "../game/turn";
-import {pikachu, papilusion} from "./fixtures/pokemon";
 import {Battle} from "../game/battle";
 import {Pokemon} from "../model/pokemon";
 
