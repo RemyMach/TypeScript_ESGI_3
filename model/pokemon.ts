@@ -25,7 +25,8 @@ export class Pokemon implements IPokemon{
     }
 
     toString(): string {
-        return "le name est " + this.name
+        const stringName =  this.name !== "" ? this.name : "non renseigné";
+        return "le name est " + stringName
             + " il a " + this.health + " point de vie";
     }
 

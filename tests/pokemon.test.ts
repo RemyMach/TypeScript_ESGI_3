@@ -4,10 +4,17 @@ import {Turn} from '../game/turn';
 
 describe('Determine a toString() function for a pokemon', () => {
 
-    it('Should return a description for carapuce with name and attack', () => {
+    it('Should return a description for carapuce with name and health', () => {
         const description = "le name est pikachu il a 80 point de vie";
         expect(pikachu.toString()).toBe(description);
     });
+
+    it('Should return a description for pikachu with name empty and health', () => {
+        pikachu.name = "";
+        const description = "le name est non renseigné il a 80 point de vie";
+        expect(pikachu.toString()).toBe(description);
+    });
+
 })
 
 describe('Determine who are going to attack in first', () => {
@@ -29,12 +36,12 @@ describe('Determine who are going to attack in first', () => {
     describe('when the pokemons have the same speed', () => {
 
 
-        it('Should return an aleatory pokemon', () => {
+        it('Should return an aleatory pokemon, here the fist arg so pikachu because random is on 0.6', () => {
             
             expect(Turn.determineWhoAttackInFirst(pikachu, other_pikachu, () => 0.6)).toBe(pikachu);
         });
 
-        it('Should return an aleatory pokemon', () => {
+        it('Should return an aleatory pokemon, here the second arg so other_pikachu because random is on 0.4', () => {
         
             expect(Turn.determineWhoAttackInFirst(pikachu, other_pikachu, () => 0.4)).toBe(other_pikachu);
         });
